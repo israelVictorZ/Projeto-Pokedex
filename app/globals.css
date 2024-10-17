@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #fff;
+  }
+}
+
+body {
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer components {
+  .pokemon-type {
+    padding: 4px 16px;
+  }
+
+  .pokemon-type.grass {
+    background: theme('colors.grass');
+  }
+
+  .pokemon-type.poison {
+    background: theme('colors.poison');
+  }
+
+  .pokemon-type.fire {
+    background: theme('colors.fire');
+  }
+
+  .pokemon-type.flying {
+    background: theme('colors.flying');
+    color: var(--background);
+  }
+
+  .pokemon-type.water {
+    background: theme('colors.water');
+  }
+
+  .pokemon-type.bug {
+    background: theme('colors.bug');
+  }
+
+  .pokemon-type.normal {
+    background: theme('colors.normal');
+    color: var(--background);
+
+  }
+
+  .pokemon-type.electric {
+    background: theme('colors.electric');
+    color: var(--background);
+  }
+
+  .pokemon-type.ground {
+    background: theme('colors.ground');
+    color: var(--background);
+  }
+
+  .pokemon-type.fairy {
+    background: theme('colors.fairy');
+    color: var(--background);
+  }
+
+  .pokemon-type.fighting {
+    background: theme('colors.fighting');
+  }
+
+  .pokemon-type.psychic {
+    background: theme('colors.psychic');
+  }
+
+  .pokemon-type.rock {
+    background: theme('colors.rock');
+  }
+
+  .pokemon-type.steel {
+    background: theme('colors.steel');
+    color: var(--background);
+  }
+
+  .pokemon-type.ice {
+    background: theme('colors.ice');
+    color: var(--background);
+  }
+
+  .pokemon-type.ghost {
+    background: theme('colors.ghost');
+  }
+
+  .pokemon-type.dragon {
+    background: theme('colors.dragon');
+  }
+}
