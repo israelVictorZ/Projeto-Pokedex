@@ -14,7 +14,6 @@ type PokemonType = {
   };
 
 export default function Modal({ pokemon }: {pokemon: PokemonType}) {
-    console.log('abacate', pokemon);
     
   const [openModal, setOpenModal] = useState("hidden");
 

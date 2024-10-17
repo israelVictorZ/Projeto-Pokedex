@@ -15,7 +15,6 @@ export async function getPokemon(url: string): Promise<PokemonType> {
   const response = await fetch(url);
   const data = await response.json();
 
-  //   console.log(data);
   return data;
 }
 
