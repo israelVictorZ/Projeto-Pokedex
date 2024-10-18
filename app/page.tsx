@@ -1,7 +1,7 @@
 import Card from "@/components/Cads";
 
 async function getPokemons() {
-  const maxPokemons = 20;
+  const maxPokemons = 50;
   const api = "https://pokeapi.co/api/v2/pokemon/";
 
   const response = await fetch(`${api}/?limit=${maxPokemons}`);
